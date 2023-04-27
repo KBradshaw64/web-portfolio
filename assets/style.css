@@ -1,0 +1,55 @@
+header {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 114, 114);
+    padding: 60px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: rgba(0, 114, 114, 0.233);
+    color: rgb(0, 0, 0);
+}
+nav a {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid rgb(20, 1, 20);
+}
+
+nav a:hover {
+    background-color: black;
+    color: aliceblue;
+}
+nav a:active,
+nav a:focus {
+    background-color: aquamarine;
+    color: brown;
+}
+
+
+@media screen and (max-width: 992px) {
+    header {
+        background-color: rgb(0, 114, 114);
+        color: rgb(0, 0, 0);
+    }
+    nav {
+        background-color:aliceblue;
+        color: rgb(0, 114, 114);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav, 
+    nav a {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
